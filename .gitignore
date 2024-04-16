@@ -1,7 +1,6 @@
 node_modules
 cypress.config.js
 cypress/downloads
-cypress/fixtures
 cypress/support
 cypress/screenshots
 cypress/videos
