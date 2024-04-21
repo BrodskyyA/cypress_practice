@@ -1,6 +1,6 @@
 /// <reference types="Cypress-xpath"/>
 
-import userData from '../../fixtures/credentials.json'
+import credentials from '../../fixtures/credentials.json'
 
 describe('Login with valid credentials', () => {
 
@@ -13,8 +13,8 @@ describe('Login with valid credentials', () => {
         })
         cy.contains('Sign In').click();
         cy.get('h4.modal-title').should('be.visible');
-        cy.get('input#signinEmail').type(userData.email);
-        cy.get('input#signinPassword').type(userData.password);
+        cy.get('input#signinEmail').type(credentials.email);
+        cy.get('input#signinPassword').type(credentials.password);
         cy.get('.modal-footer > .btn-primary').click()
         cy.get('h1').should('have.text','Garage')
     })
