@@ -1,6 +1,9 @@
 node_modules
+package.json
 cypress.config.js
 cypress/downloads
-cypress/support
+cypress/cypress/support
 cypress/screenshots
 cypress/videos
+cypress/support
+package-lock.json
